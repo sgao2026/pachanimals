@@ -31,8 +31,13 @@ public class GameFlow : MonoBehaviour
     //Used by End Goal and Bouncers to update the current score value 
     public void ScorePoint(int i)
     {
+        // string record = "original: " + _score;
         _score += i;
         _textMeshProGUI.text = _score.ToString();
+
+        // record += " change: " + i + " final: " + _score;
+
+        // Debug.Log(record);
     }
     
     //==================================================================================================================
